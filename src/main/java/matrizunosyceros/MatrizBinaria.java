@@ -53,7 +53,8 @@ public class MatrizBinaria {
     private boolean compruebaAdyacentes(int i, int j) {
         for (int m = i - 1; m <= i + 1; m++) {
             for (int n = j - 1; n <= j + 1; n++) {
-                if (m >= 0 && m < matriz.length && n >= 0 && n < matriz.length && matriz[m][n] == 0 && (m != i || n != j)) { //es decir, esta dentro de la matriz
+                if (m >= 0 && m < matriz.length && n >= 0 && n < matriz.length && matriz[m][n] == 0 && (m != i || n != j)) { 
+                //es decir, esta dentro de la matriz, es cero y no es (i,j)
                     return false;
                 }
             }
